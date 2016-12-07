@@ -1,0 +1,35 @@
+Assignment 3 Report
+
+Name: Vivek Tiwari
+
+1. If you included files other than baseline_crf.py, advanced_crf.py, evaluate_model.py, and hw3_corpus_tool.py, or modified hw3_corpus_tool.py please describe what the files do and/or your modifications to hw3_corpus_tool.py.
+
+I have submitted 3 files in all:
+	a. baseline_crf.py
+	b. advanced_crf.py
+	c. SWBD-DAMSL-Report.txt
+
+In both the file that is baseline_crf.py and advanced_crf.py i have used the same code provided by TA to read the contents of the CSV file.I have’t modified any of the content of the hw3_corpus_tool.py.
+
+I have create evaluate_model.py functionality at the end of both the files(baseline_crf.py and advanced_crf.py). I have commented the code while submitting.
+
+
+
+
+2. Describe how you evaluated your baseline and advanced features
+
+The baseline model is trained using the features which are mentioned in the assignment that is (Beginning of the CSV file, Speaker changed , Tokens and Part of speech )
+
+Advanced model is evaluated taking additional features like bigram and trigram into consideration.
+
+I generally divided data into two parts “Train Set” and “Test Set”. Train set consist of 75% of data whereas Test Set consist of 25% of data.
+
+
+3. Describe your advanced feature set.
+
+For my advanced set , i am using bi-gram and tri-gram as features. In case of bi-gram i am choosing current and the next word, whereas in case of trigram i am using previous, current and the next word as a feature
+
+4. If you tried alternate advanced feature sets, please describe them.
+
+5. Accuracy of baseline features was: 72.29140722291407  ( 150 Iterations )
+6. Accuracy of advanced features was: 73.51338729763387	 ( 50 Iterations )
